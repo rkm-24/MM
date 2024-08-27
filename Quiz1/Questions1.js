@@ -2,7 +2,7 @@
 let questions = [
     {
         num : 1,
-        question : "Raj Gopal ji Maharaj is the form of which Deity?",
+        question : "Raj Gopal ji Maharaj is the form of which deity?",
         answer : "Krishna",
         options : [
             "Shiva",
@@ -13,7 +13,7 @@ let questions = [
     },
     {
         num : 2,
-        question : "How many days the 'Brahmotsav' is being celebrated in Madanpur?",
+        question : "'Brahmotsav' is celebrated for how many days in Madanpur?",
         answer : "5-days",
         options : [
                 "3-days",
@@ -26,7 +26,7 @@ let questions = [
 
     {
         num : 3,
-        question : "Madanpur mandir is associated with which of the following?",
+        question : "Madanpur mandir is associated with which mandir of Vrindavan?",
         answer : "Rang ji ka mandir, Vrindavan",
         options : [
                 "Radhavallabh ji ka mandir, Vrindavan",
@@ -39,33 +39,33 @@ let questions = [
 
     {
         num : 4,
-        question : "What is the name of 'Railway Station' of Madanpur?",
-        answer : "Kaurara Stations",
+        question : "Name the railway station of Madanpur?",
+        answer : "Kaurara Station",
         options : [
                 "Madanpur Station",
                 "Shikohabad Jn.",
                 "Firozabad Station.",
-                "Kaurara Stations",
+                "Kaurara Station",
         ]
 
     },
 
     {
         num : 5,
-        question : "Madanpur is near Which of the following railway lines?",
-        answer : "Northern Railways",
+        question : "Madanpur is near Which of the following railway zones?",
+        answer : "Northern Railway",
         options : [
-                "Western Railways",
-                "Northern Railways",
-                "Central Railways",
-                "Eastern Railways",
+                "Western Railway",
+                "Northern Railway",
+                "Central Railway",
+                "Eastern Railway",
         ]
 
     },
 
     {
         num : 6,
-        question : "Madanpur is situated in which district of Uttar Pradesh?",
+        question : "Madanpur is located in which district of Uttar Pradesh?",
         answer : "Firozabad",
         options : [
                 "Mainpuri",
@@ -78,7 +78,7 @@ let questions = [
 
     {
         num : 7,
-        question : "Which one of the following places is nearest place from Madanpur?",
+        question : "Which among the following places is nearest to Madanpur ?",
         answer : "Sirsaganj",
         options : [
                 "Mainpuri",
@@ -91,10 +91,10 @@ let questions = [
 
     {
         num : 8,
-        question : "What is the approx. normal distance/time taken from Agra to Kaurara Rly Stn. (Tilyani-Madanpur) by road?",
-        answer : "approx. 78km (1hr 20min)",
+        question : "How much is the normal distance/time taken from Agra to Kaurara Rly Stn. (Tilyani-Madanpur) by road?",
+        answer : "approx. 78.3km (1hr 20min)",
         options : [
-                "approx. 78km (1hr 20min)",
+                "approx. 78.3km (1hr 20min)",
                 "approx. 100km (2hr 50min)",
                 "approx. 50km (1hr 50min)",
                 "approx. 120km (3hr 20min)",
@@ -104,7 +104,7 @@ let questions = [
 
     {
         num : 9,
-        question : "Which is the world famous 'International-Tourist' place near Madanpur ?",
+        question : "Which is the world famous tourist place near Madanpur?",
         answer : "Agra",
         options : [
                 "Kanpur",
@@ -117,8 +117,8 @@ let questions = [
 
     {
         num : 10,
-        question : "Major customs and pooja paddhati in Madanpur mandir are followed as per the guidelines of Rangji ka mandir because of whom?",
-        answer : "Shr Shri 1008 Swamiji of Rangji mandir",
+        question : "Who presides the pooja paddhati in Madanpur mandir (as per the guidelines of Rangji ka mandir)?",
+        answer : "Shri Shri 1008 Swamiji of Rangji mandir",
         options : [
                 "Madanpur family",
                 "Some mathurs of Madanpur",
@@ -129,3 +129,4 @@ let questions = [
     },
 
 ]
+
