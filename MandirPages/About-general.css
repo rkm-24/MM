@@ -112,28 +112,13 @@ nav ul li a.active, a:hover{
 @media(max-width:385px){
     label.logo{
         font-size:15px;
-}
-}
-
-
-
-@media(max-width:675px){
-    
-    
-}
-
-@media(max-width:675px){
-    
+    }
+    .about p{
+        font-size: 20px;
+    }
 }
 
 
-@media(max-width:675px){
-    
-}
-
-@media(max-width:675px){
-    
-}
 
 
 
