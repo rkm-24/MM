@@ -118,11 +118,11 @@ let questions = [
     {
         num : 10,
         question : "Major customs and pooja paddhati in Madanpur mandir are followed as per the guidelines of Rangji ka mandir because of whom?",
-        answer : "Shr Shri 1008 Swamiji of Rangji mandir",
+        answer : "Shri Shri 1008 Swamiji of Rangji mandir",
         options : [
                 "Madanpur family",
                 "Some mathurs of Madanpur",
-                "Shr Shri 1008 Swamiji of Rangji mandir",
+                "Shri Shri 1008 Swamiji of Rangji mandir",
                 "None of the above",
         ]
 
