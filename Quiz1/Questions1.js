@@ -44,7 +44,7 @@ let questions = [
         options : [
                 "Madanpur Station",
                 "Shikohabad Jn.",
-                "Firozabad Station.",
+                "Firozabad Station",
                 "Kaurara Station",
         ]
 
