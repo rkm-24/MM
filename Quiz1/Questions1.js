@@ -122,7 +122,7 @@ let questions = [
         options : [
                 "Madanpur family",
                 "Some mathurs of Madanpur",
-                "Shr Shri 1008 Swamiji of Rangji mandir",
+                "Shri Shri 1008 Swamiji of Rangji mandir",
                 "None of the above",
         ]
 
