@@ -171,11 +171,11 @@ h5{
 
 .card .img1 img{
     display: block;
-    width: 450px;
+    width: 95%;
     height: 350px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .img2 img{
     position: relative;
