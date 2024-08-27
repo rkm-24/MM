@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game (single-player)</title>
+    <link rel="icon" href="./logo1.png" type="image/icon"/>
+    <link rel="stylesheet" href="tttgame.css">
+</head>
+<body>
+    
+
+    <!-- html for the navbar header ends -->
+
+
+        <!-- html for board starts on 30-jul-24 -->
+        <div class="players">
+            <div class="player1 active">O's turn</div>
+            <div class="player2">X's turn</div>
+        </div>
+
+        <div class="game-board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <div class="result inactive">
+            <h1></h1>
+            <button>Restart Game</button>
+        </div>
+
+    <!-- html for board ends -->
+
+    <script>
+        const cellElements = document.querySelectorAll(".game-board .cell");
+        const player1 = document.querySelector(".players .player1");
+        const player2 = document.querySelector(".players .player2");
+        const result = document.querySelector(".result");
+        const result_text = document.querySelector(".result h1");
+        const restart_btn = document.querySelector(".result button");
+
+        const WINNING_CONDITIONS = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6],
+        ]
+        const playerO = "O";
+        const playerX = "X";
+        let toggleTurn = true;
+        cellElements.forEach(cell=>{
+            cell.onclick=()=>{
+                let currentPlayer = toggleTurn ? playerO : playerX;
+                cell.classList.add("disabled");
+                addInCell(cell, currentPlayer);
+                if(winnerCheck(currentPlayer)){
+                    // console.log( "'" + currentPlayer + "'" + "- winner");
+                    addInactive();
+                    result_text.innerHTML =  "'" + currentPlayer + "'" + "- wins the game"
+                }else if(isDraw()){
+                    // console.log("No-one wins - Game-DRAW!!!");
+                    addInactive();
+                    result_text.innerHTML =  "No-one wins- Game-DRAW!!!"
+                }else{
+                    swapPlayer();
+                }
+            }
+        });
+
+        function winnerCheck(currentPlayer){
+            return WINNING_CONDITIONS.some(condition =>{
+                // console.log(condition)
+                return  condition.every(index=>{
+                    // console.log(index)
+                    return cellElements[index].classList.contains(currentPlayer);    
+
+                    })
+
+            })
+        };
+        function isDraw(){
+            return [...cellElements].every(cell =>{
+                return cell.classList.contains(playerX) || cell.classList.contains(playerO);
+            })
+        }
+
+        function swapPlayer(){
+            toggleTurn = !toggleTurn;
+            if(toggleTurn){
+                player1.classList.add("active");
+                player2.classList.remove("active");
+            }else{
+                player2.classList.add("active");
+                player1.classList.remove("active");
+            }
+        }
+
+        function addInCell(cell, currentPlayer){
+            cell.innerHTML = currentPlayer;
+            cell.classList.add(currentPlayer);
+        }
+
+        function addInactive(){
+            result.classList.remove("inactive");
+        }
+
+        restart_btn.onclick = () => {
+            location.reload();
+        }
+
+
+
+    </script>
+
+</body>
+</html>
