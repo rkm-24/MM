@@ -28,7 +28,7 @@ h2 {
 
 
 .tiles {
-	margin: 48px auto;
+	margin: 10px auto;
 	width: max-content;
 	display: grid;
 	grid-template-columns: repeat(4, 80px);
