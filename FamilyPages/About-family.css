@@ -206,7 +206,7 @@ body,html{
         font-size:15px ;
     }
     #mobile i {
-      margin-left: -50px;
+      margin-left: -75px;
     }
 }
 @media(max-width:385px){
