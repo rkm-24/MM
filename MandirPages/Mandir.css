@@ -71,7 +71,19 @@ body,html{
     margin-top: 20px;
     border: 1px solid lightgrey;
 }
-.middle-ad, .right-ad{
+.middle-ad{
+    width: 30%;
+    height: 50px;
+    margin-top: 20px;
+    /* border: 1px solid lightgrey; */
+}
+
+.middle-ad img{
+    width: 100%;
+    height: 50px;
+}
+
+.right-ad{
     width: 30%;
     height: 50px;
     margin-top: 20px;
