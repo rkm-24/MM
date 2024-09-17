@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Temp</title>
+    <link rel="icon" href="/MkM-pages/FamilyPages/fmlyLogoGreen.jpg" type="image/icon"/>
+</head>
+<body>
+
+  <!-- CSS starts for the login-temporary form -->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #28be87;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+button:hover{
+    background: #04AA6D;
+    color: yellow;
+}
+#error{
+        color:red;
+        font-style: italic;
+    }
+    #success{
+        color:green;
+        font-weight: 700;
+    }
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+<!-- CSS ends for the login-temporary form -->
+
+<!-- html starts for the login-temporary form -->
+<form method="post" onsubmit="return validateForm();">
+Enter username : <input id='username' type='text'>
+Enter password : <input id='password' type='password'>
+<p id="error"></p>
+<p id="success"></p>
+
+<button  type = "submit" value = "Login">Login</button>
+<p class="policy">this site is protected by reCAPTCHA and Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</p>
+</form>
+<!-- html ends for the login-temporary form -->
+
+
+<!-- JS starts for the login-temporary form -->
+<script>
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
+
+function validateForm(){
+var username = document.getElementById('username').value;
+var password = document.getElementById('password').value;
+if (username == 'madanpurk' && password == 'mathur'){                  //type another username and password to change
+    // document.getElementById('sucess').innerHTML = 'sucessful login';
+    document.getElementById('error').innerHTML = "";
+    document.getElementById('success').innerHTML = 'Login successful';
+    
+    // redirect to charan sparsh page and then to mandir home-page
+    window.location.href ="newMkM.html" ;        //pl add landing page address after login e.g family home page
+    return false;
+} else {
+    document.getElementById('error').innerHTML = 'invalid credentials';
+    return false;
+}
+}
+</script>
+
+<!-- html ends for the login-temporary form -->
+
+
+<script type='text/javascript' src="functions.js"></script>
+
+
+
+    
+</body>
+</html>

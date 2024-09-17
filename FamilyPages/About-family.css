@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: hwb(173 62% 3%);
+}
+/* headerCSS Starts */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #088178;
+    box-shadow: 0 5px 15px rgba(8, 8, 8, 0.342);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: hwb(173 62% 3%);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: yellow;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+    
+}
+
+#close {
+    display: none;
+}
+#header h2{
+    font-size: 30px;
+    margin-right: 250px;
+    color: hwb(173 62% 3%);
+}
+
+/* home media querry starts essential for navbar*/
+
+@media only screen and (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background-color: #088178;
+        box-shadow: 8px 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        }
+        #navbar.active {
+            right: 0px;
+        }
+        #navbar li {
+            margin-bottom: 25px;
+        }
+        #mobile {
+            display: flex;
+            align-items: center;
+        }
+        #mobile i {
+            color: hwb(173 62% 3%);
+            font-size: 24px;
+            padding-left: 20px;
+        }
+        #close {
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: hwb(173 62% 3%);
+            font-size: 24px;
+        }
+        #header .f-logo{
+            font-size: 20px;
+            padding-right: -30px;
+        }
+        #header h2{
+            margin-left:10px;
+            color: yellow;
+        }
+        .about{
+            width: 100%;
+        }
+
+}
+
+/* header CSS (navbar and header Ends */
+
+
+.about h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about p{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about p span{
+    font-weight: 800;
+}
+.about ul li{
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 100px;
+    list-style-type: none;
+}
+
+    /* footer styling starts */
+    
+        .footer{
+            background-color: #088178;
+            margin-top: 50%;
+        }
+        .social{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .social a{
+            font-size: 20px;
+            display: inline-block;
+            border: 1px solid #088178;
+            color: hwb(173 62% 3%);
+            width: 45px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .social a:hover{
+            background-color: hwb(173 62% 3%);
+            color: black;
+        }
+        .footer ul{
+            list-style: none;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .footer ul li{
+            display: inline-block;
+            padding: 0px 15px;
+        }
+        .footer ul li a{
+            text-decoration: none;
+            color: hwb(173 62% 3%);
+        }
+        .footer ul li a:hover{
+            background-color: hwb(173 62% 3%);
+            color: black;
+        }
+        .copy-right{
+            text-align: center;
+            padding-bottom: 30px;
+            color: hwb(173 62% 3%)
+        }
+    /* footer style ends */
+
+
+@media only screen and (max-width:1030px){
+    label.logo{
+        font-size:20px ;
+    }
+    #checkbtn{
+        display:block;
+    }
+    nav ul{
+        width:100%;
+        height:100vh;
+        background-image:linear-gradient(rgb(248, 220, 195),#f16d00) ;
+        position:fixed;
+        top:83px;
+        left: -100%;
+        transition:0.5s;
+    }
+    nav ul li{
+        display:block;
+        text-align: center;
+        line-height: 50px;
+        margin: 15px;
+    }
+}
+@media only screen and (max-width:460px){
+    label.f-logo{
+        font-size:15px ;
+    }
+    
+}
+@media only screen and (max-width:385px){
+    label.f-logo{
+        font-size: 50px;
+        margin-left: 3px;
+}
+}
+/*css for nav bar ends*/
+
+
+

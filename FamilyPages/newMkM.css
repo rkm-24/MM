@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+/* headerCSS Starts */
+
+/* css starts for the header and navbar  responsive for small screens */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    background-color: #088178;
+    box-shadow: 0 5px 15px rgba(8, 8, 8, 0.342);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: hwb(173 62% 3%);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: yellow;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+    
+}
+
+#close {
+    display: none;
+}
+#header h2{
+    font-size: 30px;
+    margin-right: 250px;
+    color: yellow;
+}
+@media(max-width:1030px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background-color: #088178;
+        box-shadow: 8px 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        }
+        #navbar.active {
+            right: 0px;
+        }
+        #navbar li {
+            margin-bottom: 25px;
+        }
+        #mobile {
+            display: flex;
+            align-items: center;
+        }
+        #mobile i {
+            color: hwb(173 62% 3%);
+            font-size: 24px;
+            padding-left: 20px;
+        }
+        #close {
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: hwb(173 62% 3%);
+            font-size: 24px;
+        }
+        #header .f-logo{
+            font-size: 20px;
+            padding-right: -30px;
+        }
+        #header h2{
+            margin-left:10px;
+            color: yellow;
+            margin-right: 150px;
+        }
+        
+}
+/* css ends for the header and navbar responsive for small screens */
+
+/* css for slider starts */
+        .carousel-caption h5, 
+        .carousel-caption p{
+            color: yellow;
+        }
+/* css for slider starts */
+
+/* css starts for first ad boxes */
+.Ad-section{
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;   
+}
+
+.left-ad, .middle-ad, .right-ad{
+    width: 30%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+}
+.middle-ad a img,
+.left-ad a img,
+.right-ad a img{
+    margin-top: -1px;
+    margin-left: -1px;
+    display: flexbox;
+    width: 100%;
+    height: 50px;
+}
+
+/* css ends for first ad sections */
+
+/* css starts for ad-section2 */
+.Ad-section2{
+    margin-top: 20px;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;   
+}
+.left-ad2, .middle-ad2, .right-ad2{
+    width: 30%;
+    height: 200px;
+    margin-top: 50px;
+}
+.left-ad2 img,
+.middle-ad2 img,
+.right-ad2 img{
+    width: 100%;
+    height: 200px;
+}
+
+/* css ENDS for ad-section2 */
+
+
+/* css starts for text sections area */
+.text-sections{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-text,
+.middle-text,
+.right-text{
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    padding-left: 20px;
+    background-color: hwb(173 62% 3%);
+    border: 1px solid #c7faf7;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.left-text h5{
+    padding-top: 20px;
+    color: rgb(41, 41, 141);
+    font-size: 25px;
+    font-weight: 700;
+}
+.text-sections p{
+    text-align: justify;
+    padding-right: 20px;
+    font-size: 18px;
+}
+/* css ends for text sections area */
+
+
+
+/* css starts for banner section */
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./banner1.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+
+#banner h4 {
+    color: black;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: blue;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: black;
+}
+
+#banner button:hover {
+    background-color: #088178;
+    color: #fff;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 20px;
+    color: yellow;
+    background-color: #088178;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+#banner2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./banner2.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+
+#banner2 h4 {
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+#banner2 h3 {
+    color: blue;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner2 h3 span {
+    color: red;
+}
+
+#banner2 button.normal:hover {
+    background-color: #088178;
+    color: #fff;
+}
+
+#banner2 button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 20px;
+    color: yellow;
+    background-color: #088178;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* css ends for banner section */
+
+/* css starts for ad-section3 */
+.Ad-section3{
+    margin-top: 20px;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;   
+}
+.left-ad3, .middle-ad3, .right-ad3{
+    width: 30%;
+    height: 200px;
+    margin-top: 50px;
+}
+.left-ad3 img,
+.middle-ad3 img,
+.right-ad3 img{
+    width: 100%;
+    height: 200px;
+}
+
+/* css ENDS for ad-section3 */
+
+
+
+/* footer styling starts */
+.footer{
+    background-color: #088178;
+    margin-top: 50%;
+}
+.social{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.social a{
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid #088178;
+    color: hwb(173 62% 3%);
+    width: 45px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.social a:hover{
+    background-color: hwb(173 62% 3%);
+    color: black;
+}
+.footer ul{
+    list-style: none;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: hwb(173 62% 3%);
+}
+.footer ul li a.active1{
+    color: black;
+    background-color: hwb(173 62% 3%);
+}
+.footer ul li a:hover{
+    background-color: hwb(173 62% 3%);
+    color: black;
+}
+.copy-right{
+    text-align: center;
+    padding-bottom: 30px;
+    color: hwb(173 62% 3%)
+}
+/* footer style ends */
+
+
+/* home page media querry starts */
+
+
+@media (max-width:799px) {
+    
+        #header .f-logo{
+            font-size: 20px;
+            padding-right: -30px;
+        }
+        #header h2{
+            margin-left:10px;
+            color: yellow;
+        }
+
+        .carousel-caption h5, 
+        .carousel-caption p{
+            color: rgb(137, 243, 67);
+        }
+
+        /* css starts for first ad sections */
+        .Ad-section{
+            display: block;
+            width: 100%;
+        }
+        .Ad-section .left-ad,
+        .Ad-section .middle-ad,
+        .Ad-section .right-ad{
+            width: 100%;
+        }
+        /* css ends for first ad sections */
+
+        /* css starts for second ad section2 */
+        .Ad-section2{
+            margin-top: 50px;
+            display: block;
+            width: 100%;
+        }
+        .Ad-section2 .left-ad2,
+        .Ad-section2 .middle-ad2,
+        .Ad-section2 .right-ad2{
+            width: 100%;
+        }
+        /* css ends for second ad section2 */
+
+        /* css starts for text sections */
+        .text-sections{
+            display: block;
+        } 
+        .left-text, .middle-text,
+        .right-text{
+            width: 100%;
+
+        }   
+        
+        /* css starts for second ad section3 */
+        .Ad-section3{
+            margin-top: 50px;
+            display: block;
+            width: 100%;
+        }
+        .Ad-section3 .left-ad3,
+        .Ad-section3 .middle-ad3,
+        .Ad-section3 .right-ad3{
+            width: 100%;
+        }
+        /* css ends for second ad section3 */
+    }
+
+@media(max-width:498px){
+    #mobile i {
+        margin-left: -50px;
+    }
+
+    .carousel-caption h5, 
+    .carousel-caption p{
+        color: rgb(69, 245, 221);
+        margin-bottom: 5px;
+    }
+    .carousel-caption p{
+        padding-top: 5px;
+    }
+
+    .Ad-section{
+        display: block;
+        width: 100%;
+    }
+    .Ad-section .left-ad,
+    .Ad-section .middle-ad,
+    .Ad-section .right-ad{
+        width: 100%;
+    }
+    .Ad-section2 {
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    } 
+    .Ad-section2 .left-ad2 img,
+    .Ad-section2 .middle-ad2 img,
+    .Ad-section2 .right-ad2 img{
+        width: 100%;
+    }
+
+
+    .text-sections{
+        display: block;
+    }
+    .text-sections .left-text, 
+    .text-sections .middle-text,
+    .text-sections .right-text{
+        width: 100%;
+    }
+}
+@media(max-width:345px){
+    #mobile i { 
+        margin-left: -50px;
+    }
+    #header h2{
+        margin-right: 140px;
+    }
+
+    .footer{
+        margin-top: 250%;
+    }
+    
+    .Ad-section2 .left-ad2 img,
+    .Ad-section2 .middle-ad2 img,
+    .Ad-section2 .right-ad2 img{
+        width: 100%;
+    }
+
+    #banner h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #banner2 h4{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #banner2 h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+} 
+
+/* headerCSS Ends */
+
+    
+
+
+
+
+
+
