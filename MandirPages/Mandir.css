@@ -267,7 +267,28 @@ h5{
 }
 /* css ends for Ad3 boxes */
 
+/* css STARTS for Ad4 boxes */
 
+.Ad-section4{
+    margin-top: 20px;
+    width: 100%;
+    background-color: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;   
+}
+.left-ad4, .middle-ad4, .right-ad4{
+    width: 30%;
+    height: 200px;
+    margin-top: 50px;
+}
+.left-ad4 img,
+.middle-ad4 img,
+.right-ad4 img{
+    width: 100%;
+    height: 200px;
+}
+/* css ENDS for Ad4 boxes */
 
 
 
