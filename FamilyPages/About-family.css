@@ -205,7 +205,9 @@ body,html{
     label.f-logo{
         font-size:15px ;
     }
-    
+    #mobile i {
+      margin-left: -50px;
+    }
 }
 @media(max-width:385px){
     label.f-logo{
