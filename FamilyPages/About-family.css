@@ -10,12 +10,12 @@ body,html{
     background-color: hwb(173 62% 3%);
 }
 /* headerCSS Starts */
-
+/* css starts for the header and navbar  responsive for small screens */
 #header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 5px 40px;
     background-color: #088178;
     box-shadow: 0 5px 15px rgba(8, 8, 8, 0.342);
     z-index: 999;
@@ -72,12 +72,9 @@ body,html{
 #header h2{
     font-size: 30px;
     margin-right: 250px;
-    color: hwb(173 62% 3%);
+    color: yellow;
 }
-
-/* home media querry starts essential for navbar*/
-
-@media only screen and (max-width:799px) {
+@media(max-width:1030px){
     #navbar {
         display: flex;
         flex-direction: column;
@@ -123,16 +120,15 @@ body,html{
         #header h2{
             margin-left:10px;
             color: yellow;
+            margin-right: 150px;
         }
-        .about{
-            width: 100%;
-        }
-
+        
 }
+/* css ends for the header and navbar responsive for small screens */
 
-/* header CSS (navbar and header Ends */
-
-
+.about{
+    width: 90%;
+}
 .about h2{
     margin-top: 50px;
     text-align: center;
