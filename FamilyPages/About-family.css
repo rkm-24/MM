@@ -7,9 +7,10 @@
 body,html{
     width: 100%;
     height: 100%;
-    background-color: hwb(173 62% 3%);
+    /* background-color: hwb(173 62% 3%); */
 }
 /* headerCSS Starts */
+
 /* css starts for the header and navbar  responsive for small screens */
 #header {
     display: flex;
@@ -137,7 +138,7 @@ body,html{
 .about p{
     margin-top: 30px;
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 5px;
     text-align: justify;
     font-size: 18px;
 }
@@ -146,8 +147,8 @@ body,html{
     font-weight: 800;
 }
 .about ul li{
-    font-size: 20px;
-    margin-left: 400px;
+    font-size: 18px;
+    margin-left: 40px;
     margin-right: 30px;
     list-style-type: none;
 }
@@ -200,43 +201,20 @@ body,html{
         }
     /* footer style ends */
 
-
-@media only screen and (max-width:1030px){
-    label.logo{
-        font-size:20px ;
-    }
-    #checkbtn{
-        display:block;
-    }
-    nav ul{
-        width:100%;
-        height:100vh;
-        background-image:linear-gradient(rgb(248, 220, 195),#f16d00) ;
-        position:fixed;
-        top:83px;
-        left: -100%;
-        transition:0.5s;
-    }
-    nav ul li{
-        display:block;
-        text-align: center;
-        line-height: 50px;
-        margin: 15px;
-    }
-}
 @media only screen and (max-width:460px){
     label.f-logo{
         font-size:15px ;
     }
     
 }
-@media only screen and (max-width:385px){
+@media(max-width:385px){
     label.f-logo{
         font-size: 50px;
         margin-left: 3px;
 }
 }
 /*css for nav bar ends*/
+
 
 
 
