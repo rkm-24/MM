@@ -323,6 +323,13 @@ h5{
     .left-ad3, .middle-ad3, .right-ad3{
         width: 100%;
     }
+
+    .Ad-section4{
+        display: block;
+    }
+    .left-ad4, .middle-ad4, .right-ad4{
+        width: 100%;
+    }
 }
 
 
