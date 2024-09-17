@@ -392,10 +392,8 @@ button.white{
 }
 @media(max-width:460px){
     #mobile i {
-        margin-left: -50px;
+        margin-left: -75px;
     }
-
-
     label.f-logo{
         font-size:15px ;
     }
@@ -425,10 +423,7 @@ button.white{
     }  
 }
 @media(max-width:385px){
-    #mobile i {
-        margin-left: -70px;
-    }
-
+    
     label.f-logo{
         font-size: 50px;
         margin-left: 3px;
