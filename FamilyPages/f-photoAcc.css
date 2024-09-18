@@ -224,7 +224,7 @@ body,html{
     }
     #header h2{
         font-size: 30px;
-        margin-right: -10px;
+        margin-right: -50px;
     }
 
     .Ad-section{
@@ -245,7 +245,7 @@ body,html{
     }
 
 }
-@media(max-width:345px){
+@media(max-width:390px){
     #mobile i { 
         margin-left: -10px;
     }
