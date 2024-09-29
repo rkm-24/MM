@@ -34,7 +34,7 @@
         }
 
         #flipbook .eng-page {
-            background-image: url("eng-page-bg.PNG");
+            background-image: url("./eng-page-bg.PNG");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
