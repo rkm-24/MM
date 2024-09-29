@@ -1,7 +1,10 @@
-/* body {
-            width: 1200px;
-            height: 100vh;
-        } */
+         body {
+            background-image: url("./chalisa-wall.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
         .container {
             background-image: url("page-bg3.png");
             width: 525px;
