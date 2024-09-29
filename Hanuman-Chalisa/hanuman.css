@@ -1,0 +1,96 @@
+/* body {
+            width: 1200px;
+            height: 100vh;
+        } */
+        .container {
+            background-image: url("page-bg3.png");
+            width: 525px;
+            height: 300px;
+            border: 10px solid violet;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #flipbook .coverpage img,
+        #flipbook .lastpage img,
+        #flipbook .cover-e img{
+            width: 100%;
+            height: 100%;
+            margin-top: 0px;
+        }
+
+
+        #flipbook .page {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-image: url("page-bg2.PNG");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 3px solid violet;
+            border-radius: 20px;
+        }
+
+        #flipbook .eng-page {
+            background-image: url("eng-page-bg.PNG");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 3px solid violet;
+            border-radius: 20px;
+        }
+
+        .page h6 {
+            font-size: 10px;
+            margin-top: 3px;
+        }
+        .page h2 {
+            font-size: 16px;
+            margin-top: -20px;
+            color: blue;
+            margin-left: 10px;
+        }
+
+        .page p.doha{
+            /* font-size: 17px; */
+            font-size: 13px;
+            color: black;
+            /* text-align: justify; */
+            margin: -5px 5px;
+        }
+        
+        .page p {
+            /* font-size: 17px; */
+            font-size: 15px;
+            color: black;
+            /* text-align: justify; */
+            margin: -18px 5px;
+        }
+
+        .eng-page p {
+            font-size: 14px;
+        }
+
+        .page img {
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .page p span {
+            margin-top: -50px;
+            font-size: 11px;
+        }
+
+        #flipbook .lastpage span {
+            font-size: 12px;
+            color: blue;
+        }
+
+        @media(max-width: 1050px) {
+            
+        }
+        
+        @media(max-width: 450px) {
+            .container {
+                margin-top: 0;
+            }
+        }
