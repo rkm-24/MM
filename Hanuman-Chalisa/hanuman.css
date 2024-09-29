@@ -6,7 +6,7 @@
             background-attachment: fixed;
         }
         .container {
-            background-image: url("page-bg3.png");
+            background-image: url("./page-bg3.png");
             width: 525px;
             height: 300px;
             border: 10px solid violet;
@@ -25,7 +25,7 @@
         #flipbook .page {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            background-image: url("page-bg2.PNG");
+            background-image: url("./page-bg2.PNG");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
