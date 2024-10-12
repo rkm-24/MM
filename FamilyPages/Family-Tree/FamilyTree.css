@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:#f2f3c5;
+    height: 100vh;
+    /* width: 2000vh; */
+    width: 5000vw;
+    display: grid;
+    align-items: center;
+    /* background: rgb(215, 234, 247); */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* headerCSS Starts */
+
+#header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #088179;
+    box-shadow: 0 5px 15px rgba(8, 8, 8, 0.342);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: hwb(173 62% 3%);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: yellow;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: yellow;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+    
+}
+
+#close {
+    display: none;
+}
+#header h2{
+    font-size: 30px;
+    margin-right: 250px;
+    color: hwb(173 62% 3%);
+}
+
+@media (max-width:1100px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background-color: #088178;
+        box-shadow: 8px 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+        }
+        #navbar.active {
+            right: 0px;
+        }
+        #navbar li {
+            margin-bottom: 25px;
+        }
+        #mobile {
+            display: flex;
+            align-items: center;
+        }
+        #mobile i {
+            color: hwb(173 62% 3%);
+            font-size: 24px;
+            padding-left: 20px;
+        }
+        #close {
+            display: initial;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: hwb(173 62% 3%);
+            font-size: 24px;
+        }
+        #header .f-logo{
+            font-size: 20px;
+            padding-right: -30px;
+        }
+        #header h2{
+            margin-left:10px;
+            color: yellow;
+        }
+    }
+
+
+    /* CSS ENDS for the header, navbar and collapsable navbar */
+
+       
+    
+    
+    
+    
+
+
+    #title {
+        position: fixed;
+        z-index: 10;
+        margin-top: -270px;
+        padding-top: 20px;
+    }
+
+    #title h1 {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100vw;
+        text-align: center;
+        color: navy; 
+        background: rgba(255, 182, 193, 0.233);
+    }
+
+    #title p {
+        color: #5f5f5f;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    /* #demography {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 170px;
+    } */
+
+    
+    #demography h4 {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 375px;
+        z-index: 9;
+    }
+
+
+
+    /* #L14-count {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 300px;
+        z-index: 9;
+    } */
+
+    #img-count{
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 400px;
+        z-index: 9;
+    }
+
+    #fem-count {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 440px;
+        z-index: 9;
+    }
+
+    #male-count {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 460px;
+        z-index: 9;
+    }
+
+    #percent-fem {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 480px;
+        z-index: 9;
+    }
+
+
+    /* #L15-count {
+        position: fixed;
+        margin-left: 10px;
+        margin-top: 550px;
+        z-index: 9;
+    } */
+
+    #buttons {
+        /* width: 100px; */
+        
+        position: fixed;
+        margin-left: 10px;
+        z-index: 9;
+    }
+
+    #buttons button {
+        /* background-color: rgb(253, 219, 194);
+        width: 90px;
+        height: 30px; */
+        margin-top: 20px;
+        /* border: 1px solid black;
+        border-radius: 4px; */
+        cursor: pointer;
+    }
+
+    #zoom-in-btn {
+        margin-left: 60px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-image: url("./treepix/zoomi.png");
+        background-repeat: no-repeat;
+        position: fixed;
+        background-size: cover;
+    }
+
+    #zoom-out-btn {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-image: url("./treepix/zoomo.png");
+        background-repeat: no-repeat;
+        position: fixed;
+        background-size: cover;
+    }
+
+    #zoom-container {
+        transform-origin: top left;
+        /* set the transform origin to top left */
+    }
+
+
+
+
+
+
+/* .container{
+    margin-left: 1%;
+    width: 98%;
+    height:200vh;
+    background:#f2f3c5;
+  } */
+
+.tree {
+    margin-top: 1000px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    /* overflow: visible; */
+}
+
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.tree li {
+    display: inline-table;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 10px;
+    transition: .5s;
+}
+
+.tree li:before, .tree li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 2px solid darkorchid;
+    width: 51%;
+    height: 10px;
+}
+
+.tree li:after{
+    right: auto;
+    left: 50%;
+    border-left: 2px solid darkorchid;
+}
+
+.tree li:only-child:after, .tree li:only-child:before {
+    /* display: none; */
+    border-right: 2px solid darkorchid;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.tree li:first-child:before, .tree li:last-child:after {
+    border: 0 none;
+}
+
+.tree li:last-child:before {
+    border-right: 2px solid darkorchid;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.tree li:last-child:after {
+    border-radius: 5px 0px 0px 0px;
+}
+
+.tree ul ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid darkorchid;
+    width: 0;
+    height: 20px;
+}
+
+
+.tree a {
+    border: 1px solid #ccc;
+    background-color: lightblue;
+    padding: 10px;
+    display: inline-grid;
+    /* border-radius: 5px; */ 
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px;
+    text-decoration-line: none;
+    transition: .5s;
+}
+
+.tree a img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px !important;
+    border-radius: 100px;
+    margin: auto;
+}
+/* CSS STARTS for on-hover enlarge the img */
+.tree a img:hover {
+    width: 200px;
+    height: 200px;
+}
+/* CSS ENDS for on-hover enlarge the img */
+
+.tree a span {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+/* CSS STARTS for on-hover enlarge the Names */
+.tree a span:hover {
+    font-size: 25px;
+}
+/* CSS ENDS for on-hover enlarge the Names */
+.tree li a:hover, .tree li a:hover img,
+.tree li a:hover span, .tree li a:hover+ul li a {
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+    box-shadow: 0px 0px 8px -5px #5f5f5f;
+}
+
+.tree li a:hover+ul li:after, .tree li a:hover+ul li:before,
+.tree li a:hover+ul:before, .tree li a:hover+ul ul:before {
+    border-color: #94a0b4;
+}
+
+
+.wall {
+    width: auto;
+    margin-top: -100vh;
+    margin-left: 500px;
+    background: #ffffff79;
+    border-radius: 200px;
+}
+
+.tree li a.fem {
+    background: rgb(250, 193, 193);
+   
+}
+
+.tree li a span.fem{
+    background: rgb(250, 193, 193);
+}
+
+.tree li a.dead {
+    background: rgb(194, 192, 192);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+
+@media (max-width:490px) {
+    
+    #title {
+    margin-top: -450px;
+    }
+
+    #demography{
+        margin-top: 160px;
+    }
+
+    #demography h4 {
+        margin-top: 380px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS STARTS for exclusive Analysis.html page */
+
+
+
+
+#titleA {
+    position: fixed;
+    z-index: 10;
+    margin-top: -300px;
+    padding-top: 20px;
+}
+
+#titleA h1 {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+    color: navy; 
+    background: rgba(255, 182, 193, 0.233);
+}
+
+#titleA p {
+    color: lightslategray;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#section ul li{
+    margin-left: 50px;
+}
+
+#section p {
+    margin-left: 25px;
+}
+
+
+/* css STARTS for media querry for analysis page */
+@media (max-width:490px) {
+    #mobile i {
+        padding-left: 0;
+    }
+    #header h2 {
+        margin-right: 0;
+    }
+    #titleA {
+    margin-top: -630px;
+    }
+    #section {
+        margin-left: 0px;
+    }
+
+}
+
+
+
+
