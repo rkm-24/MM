@@ -68,13 +68,13 @@ var parent = document.getElementById("zoom-container");
 var nodesSameClass = parent.getElementsByClassName("fem");
 var femCount = nodesSameClass.length;
 console.log(femCount);
-document.getElementById("fem-count").innerHTML = "<span> # Ladies/girls count = " + femCount + "</span>";
+document.getElementById("fem-count").innerHTML = "<span> # Female count = " + femCount + "</span>";
 // JS code ENDS to count class="fem"
 
 // JS code STARTS to count males appliy formula males = total-females
 var maleCount = (numberOfImages - nodesSameClass.length);
 console.log(maleCount)
-document.getElementById("male-count").innerHTML = "<span> # Men/boys count = " + maleCount + "</span>";
+document.getElementById("male-count").innerHTML = "<span> # Male count = " + maleCount + "</span>";
 // JS code ENDS to count class="males"
 
 // calculate % of females
@@ -83,7 +83,7 @@ document.getElementById("male-count").innerHTML = "<span> # Men/boys count = " +
 let num = parseFloat((nodesSameClass.length)*100/(numberOfImages));
 var femPercent = num.toFixed(1);
 console.log(femPercent);
-document.getElementById("percent-fem").innerHTML = "<span> # all Ladies/girls<br> count-share = " + femPercent + "%</span>";
+document.getElementById("percent-fem").innerHTML = "<span> # Female count-share = " + femPercent + "%</span>";
 
 // JS code ENDS to count image tags in above document
 
