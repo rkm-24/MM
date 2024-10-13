@@ -173,7 +173,7 @@ body {
     #demography h4 {
         position: fixed;
         margin-left: 10px;
-        margin-top: 375px;
+        margin-top: 425px;
         z-index: 9;
     }
 
@@ -189,7 +189,7 @@ body {
     #img-count{
         position: fixed;
         margin-left: 10px;
-        margin-top: 400px;
+        margin-top: 450px;
         z-index: 9;
     }
 
@@ -203,14 +203,14 @@ body {
     #male-count {
         position: fixed;
         margin-left: 10px;
-        margin-top: 460px;
+        margin-top: 510px;
         z-index: 9;
     }
 
     #percent-fem {
         position: fixed;
         margin-left: 10px;
-        margin-top: 480px;
+        margin-top: 530px;
         z-index: 9;
     }
 
