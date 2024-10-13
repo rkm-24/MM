@@ -163,28 +163,13 @@ body {
         font-weight: 300;
     }
 
-    /* #demography {
-        position: fixed;
-        margin-left: 10px;
-        margin-top: 170px;
-    } */
-
-    
     #demography h4 {
         position: fixed;
         margin-left: 10px;
-        margin-top: 450px;
+        margin-top: 425px;
         z-index: 9;
     }
 
-
-
-    /* #L14-count {
-        position: fixed;
-        margin-left: 10px;
-        margin-top: 300px;
-        z-index: 9;
-    } */
 
     #img-count{
         position: fixed;
@@ -196,7 +181,7 @@ body {
     #fem-count {
         position: fixed;
         margin-left: 10px;
-        margin-top: 440px;
+        margin-top: 490px;
         z-index: 9;
     }
 
@@ -213,7 +198,6 @@ body {
         margin-top: 530px;
         z-index: 9;
     }
-
 
     /* #L15-count {
         position: fixed;
