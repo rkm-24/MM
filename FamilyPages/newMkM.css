@@ -341,6 +341,21 @@ button.normal{
 
 /* css ENDS for ad-section3 */
 
+/* css starts for second ad section4 */
+        .Ad-section4{
+            margin-top: 50px;
+            display: block;
+            width: 100%;
+        }
+        .Ad-section4 .left-ad4,
+        .Ad-section4 .middle-ad4,
+        .Ad-section4 .right-ad4{
+            width: 100%;
+        }
+        /* css ends for second ad section4 */
+    
+
+
 
 
 /* footer styling starts */
@@ -461,6 +476,20 @@ button.normal{
             width: 100%;
         }
         /* css ends for second ad section3 */
+
+        * css starts for second ad section4 */
+        .Ad-section4{
+            margin-top: 50px;
+            display: block;
+            width: 100%;
+        }
+        .Ad-section4 .left-ad4,
+        .Ad-section4 .middle-ad4,
+        .Ad-section4 .right-ad4{
+            width: 100%;
+        }
+        /* css ends for second ad section4 */
+           
     }
 
 @media(max-width:498px){
